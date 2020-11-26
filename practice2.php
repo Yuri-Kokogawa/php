@@ -21,24 +21,28 @@ echo f(10,15);
 
 echo"\n";
 //課題３
-function kk($arr){
+function total($arr){
     $result = 1;
-    foreach ($arr as $a){
-    $result *= $a;
+    foreach($arr as $number ){
+        $result *= $number;
+    }
+    return $result;
 }
-echo $result;
-}
-
+echo total(array(1, 3, 5 ,7, 9));
 
 echo"\n";
 //課題４
 function max_array($arr){
-    $max_namber = $arr[0];
-    foreach($arr as $a){
-    if($max_nember < $a){
-        $max_nember = $a;
-      }
-    }
-    return $max_nember;
+// とりあえず配列の最初の要素を一番大きい値とする
+ $max_number = $arr[0];
+ foreach($arr as $a){
+ //どうしたらいいかわからない・・・・
+ 
+if($max_number < $a){
+    $max_number = $a;
+  }
+ }
+return $max_number;
 }
-echo max_array(array(1,3,5,7,9));
+echo max_array(array(1, 3, 5 ,7, 9));
+echo"\n";
